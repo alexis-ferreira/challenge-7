@@ -68,6 +68,19 @@ header .header-container .menu ul li>a
     font-size: 14px;
 }
 
+header .header-container .menu ul>li>.borderHover
+{
+    background-color: white;
+
+    height: 2px;
+    width: 0px;
+
+    transition: width 200ms;
+
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
 header .info
 {
     width: 100%;
@@ -182,7 +195,7 @@ main .container-main .creation .title>h2
     text-transform: uppercase;
 }
 
-main .container-main .creation .title>#btn-see
+main .container-main .creation .title>#btnSee
 {
     width: 155px;
 
@@ -198,6 +211,8 @@ main .container-main .creation .title>#btn-see
     border: 1px solid black;
 
     cursor: pointer;
+
+    transition: background-color 200ms, color 200ms;
 }
 
 main .container-main .creation>.pictures-container
@@ -213,6 +228,46 @@ main .container-main .creation>.pictures-container
 main .container-main .creation .pictures-container>.img
 {
     margin-bottom: 30px;
+
+    cursor: pointer;
+
+    position: relative;
+}
+
+main .container-main .creation .pictures-container .img>figcaption
+{
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+
+    width: 136px;
+
+    padding: 100px 80px 40px 40px;
+
+    text-transform: uppercase;
+
+    color: white;
+    
+    position: absolute;
+    bottom: 4px;
+
+    background: linear-gradient(#fff0, #000000c7);
+
+    z-index: 3;
+
+    transition: color 500ms, background 300ms;
+}
+
+main .container-main .creation .pictures-container .img>.hoverBackground
+{
+    height: 0%;
+    width: 100%;
+
+    background: rgba(255, 255, 255, 0.7);
+
+    position: absolute;
+    bottom: 0px;
+
+    transition: height 300ms;
 }
 
 
@@ -261,6 +316,19 @@ footer .container-footer .top-footer .social-media>a>i
     font-size: 25px;
 }
 
+footer .container-footer .top-footer .social-media>a>.borderHoverSocial
+{
+    background-color: white;
+
+    height: 2px;
+    width: 0px;
+
+    transition: width 200ms;
+
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
 footer .container-footer>.bottom-footer
 {
     display: flex;
@@ -290,6 +358,19 @@ footer .container-footer .bottom-footer .menu-footer>ul>li>a
 
     font-size: 15px;
     font-family: 'Alata', sans-serif;
+}
+
+footer .container-footer .bottom-footer .menu-footer>ul>li>.borderHoverFooter
+{
+    background-color: white;
+
+    height: 2px;
+    width: 0px;
+
+    transition: width 200ms;
+
+    margin: 0 auto;
+    margin-top: 8px;
 }
 
 footer .container-footer .bottom-footer>.copyright>p
