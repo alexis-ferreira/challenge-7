@@ -6,6 +6,10 @@
 body
 {
     background-color: hsl(0, 0%, 100%);
+
+    max-width: 1440px;
+
+    margin: 0 auto;
 }
 
 
@@ -103,9 +107,110 @@ header .info .container-p>p
 
 /* -------- MAIN --------- */
 
-main .container-main
+main
 {
-    width: 1110px;
+    max-width: 1110px;
 
     margin: 0 auto;
+}
+
+main .container-main
+{
+    margin: 150px auto;
+}
+
+main .container-main>.description
+{
+    display: flex;
+
+    position: relative;
+}
+
+main .container-main .description>.container-description
+{
+    width: 450px;
+
+    margin-top: 180px;
+
+    padding-left: 100px;
+    padding-top: 100px;
+
+    background-color: white;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+main .container-main .description .container-description>h2
+{
+    font-size: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    
+    text-transform: uppercase;
+
+    margin-bottom: 30px;
+}
+
+main .container-main .description .container-description>p
+{
+    font-size: 15px;
+    font-family: 'Alata', sans-serif;
+
+    color: hsl(0, 0%, 55%);
+
+    line-height: 25px;
+}
+
+
+
+/* ------- CONTAINER CREATIONS ------- */
+
+main .container-main .creation>.title
+{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 180px;
+}
+
+main .container-main .creation .title>h2
+{
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+
+    text-transform: uppercase;
+}
+
+main .container-main .creation .title>#btn-see
+{
+    width: 155px;
+
+    font-size: 15px;
+    font-family: 'Alata', sans-serif;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    background-color: white;
+
+    border: 1px solid black;
+
+    cursor: pointer;
+}
+
+main .container-main .creation>.pictures-container
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin-top: 90px;
+    margin-bottom: 180px;
+}
+
+main .container-main .creation .pictures-container>.img
+{
+    margin-bottom: 30px;
 }
