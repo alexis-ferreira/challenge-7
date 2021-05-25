@@ -380,3 +380,47 @@ footer .container-footer .bottom-footer>.copyright>p
     font-size: 15px;
     font-family: 'Alata', sans-serif;
 }
+
+
+
+
+
+
+/* --------- MEDIA QUERIES -------- */
+
+@media screen AND (max-width: 450px) {
+    
+    header {
+        background-image: url(../images/mobile/image-hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 0;
+        font-family: 'Alata', sans-serif;
+        max-width: 450px;
+        height: 650px;
+    }
+
+    header .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 60px;
+        width: 100%;
+        max-width: 1110px;
+        margin: 0 30px;
+    }
+
+    header .info .container-p {
+        border: 2px solid white;
+        margin: 175px 30px;
+    }
+
+    header .info .container-p > p {
+        font-size: 45px;
+        text-transform: uppercase;
+        color: hsl(0, 0%, 100%);
+        font-family: 'Josefin Sans', sans-serif;
+        width: 100%;
+        padding: 30px;
+    }
+}

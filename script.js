@@ -99,7 +99,7 @@ let borderHoverFooter = document.getElementsByClassName('borderHoverFooter')
 
 for (let i=0; i<btnMenuFooter.length; i++){
     btnMenuFooter[i].addEventListener('mouseenter', function(){
-        borderHoverFooter[i].style.width='20px'
+        borderHoverFooter[i].style.width='25px'
     })
 };
 
