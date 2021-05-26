@@ -410,17 +410,26 @@ footer .container-footer .bottom-footer>.copyright>p
         margin: 0 30px;
     }
 
+    header .header-container .logo > img {
+        width: 170px;
+    }
+
     header .info .container-p {
         border: 2px solid white;
-        margin: 175px 30px;
+        margin: 150px 30px;
+    }
+
+    header .header-container .menu > ul {
+        display: none;
+        width: 380px;
     }
 
     header .info .container-p > p {
-        font-size: 45px;
+        font-size: 40px;
         text-transform: uppercase;
         color: hsl(0, 0%, 100%);
         font-family: 'Josefin Sans', sans-serif;
-        width: 100%;
+        width: 90%;
         padding: 30px;
     }
 }
