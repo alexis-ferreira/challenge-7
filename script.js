@@ -68,6 +68,40 @@ btnSee.addEventListener('mouseleave', function(){
     btnSee.style.color = 'black';
 });
 
+// Responsive
+
+let picturesContainer = document.getElementsByClassName('pictures-container');
+// console.log(picturesContainer[0]);
+let containerTitle = document.getElementsByClassName('title');
+// console.log(containerTitle[0]);
+
+
+if (screen.width <=450){
+    btnSee.remove();
+    picturesContainer[0].insertAdjacentElement('beforeend', btnSee);
+}
+
+
+// RESPONSIVE IMAGE
+
+let imgSrc = ['./images/mobile/image-deep-earth.jpg','./images/mobile/image-night-arcade.jpg','./images/mobile/image-soccer-team.jpg','./images/mobile/image-grid.jpg','./images/mobile/image-from-above.jpg','./images/mobile/image-pocket-borealis.jpg','./images/mobile/image-curiosity.jpg','./images/mobile/image-fisheye.jpg'];
+// console.log(imgSrc);
+
+let image = document.getElementsByClassName('imgResponsive');
+// console.log(image);
+
+if (screen.width <=450){
+    for (let i = 0; i < imgSrc.length; i++){
+        image[i].setAttribute('src',imgSrc[i]);
+        // console.log(image[i]);
+    }
+}
+
+
+
+
+
+
 
 
 // -------- ANIMATION PICTURES --------
@@ -89,7 +123,6 @@ for (let i=0; i<imgHover.length; i++){
 for (let i=0; i<imgHover.length; i++){
     imgHover[i].addEventListener('mouseleave', function(){
         hoverBackground[i].style.height = '0%';
-        figCaption[i].style.background = 'linear-gradient(#fff0, #000000c7)';
         figCaption[i].style.color = 'white';
     })
 };
