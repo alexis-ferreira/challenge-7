@@ -569,6 +569,8 @@ footer .attribution>a{
     main .container-main .description .container-img>img
     {
         width: 90%;
+
+        max-height: 400px;
     }
 
     main .container-main .description > .container-description {
@@ -644,6 +646,9 @@ footer .attribution>a{
 
     main .container-main .creation > .pictures-container .img>img{
         width: 375px;
+
+        max-height: 130px;
+
     }
 
     main .container-main .creation .pictures-container .img > figcaption {
