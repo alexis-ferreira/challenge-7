@@ -21,6 +21,36 @@ for (let i=0; i<hoverBtnMenu.length; i++){
 
 
 
+// ------------- MENU BURGER -------------
+
+let btnMenuBurger = document.getElementById('btnBurger');
+// console.log(btnMenuBurger);
+
+let menuBurger = document.getElementById('menuBurger');
+// console.log(menuBurger);
+// menuBurger.remove();
+
+let closeMenu = document.getElementById('imgBtn');
+// console.log(closeMenu);
+
+let bodyScroll = document.getElementsByTagName('body');
+// console.log(body[0]);
+
+btnMenuBurger.addEventListener('click', function(){
+
+    if (closeMenu.getAttribute('src') == './images/icon-hamburger.svg'){
+    closeMenu.setAttribute('src', './images/icon-close.svg');
+    menuBurger.style.width ='100%';
+    bodyScroll[0].setAttribute('class', 'stop-scroll');
+    }
+    else{
+        closeMenu.setAttribute('src', './images/icon-hamburger.svg');
+        menuBurger.style.width ='0';
+    }
+});
+
+
+
 
 // -------- BTN SEE ALL --------
 
