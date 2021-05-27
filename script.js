@@ -21,6 +21,27 @@ for (let i=0; i<hoverBtnMenu.length; i++){
 
 
 
+
+
+let headerDiv = document.getElementById('header');
+// console.log(headerDiv);
+
+let headerBg = document.getElementById('blurHeader');
+// console.log(headerBg);
+
+if (screen.width > 450){
+    headerDiv.addEventListener('mouseenter', function(){
+        headerBg.style.backgroundColor = 'rgb(0 0 0 / 50%)';
+    })
+}
+
+if (screen.width > 450){
+    headerDiv.addEventListener('mouseleave', function(){
+        headerBg.style.backgroundColor = 'rgb(0 0 0 / 0%)';
+    })
+}
+
+
 // ------------- MENU BURGER -------------
 
 let btnMenuBurger = document.getElementById('btnBurger');
