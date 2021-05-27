@@ -46,6 +46,7 @@ btnMenuBurger.addEventListener('click', function(){
     else{
         closeMenu.setAttribute('src', './images/icon-hamburger.svg');
         menuBurger.style.width ='0';
+        bodyScroll[0].setAttribute('class', 'scroll');
     }
 });
 
