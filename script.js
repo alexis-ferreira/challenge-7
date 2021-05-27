@@ -61,11 +61,13 @@ let btnSee = document.getElementById('btnSee');
 btnSee.addEventListener('mouseenter', function(){
     btnSee.style.backgroundColor = 'black';
     btnSee.style.color = 'white';
+    btnSee.style.letterSpacing = '2px'
 });
 
 btnSee.addEventListener('mouseleave', function(){
     btnSee.style.backgroundColor = 'white';
     btnSee.style.color = 'black';
+    btnSee.style.letterSpacing = '5px'
 });
 
 // Responsive

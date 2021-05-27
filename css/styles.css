@@ -219,7 +219,7 @@ main .container-main .creation .title>#btnSee
 
     text-transform: uppercase;
 
-    letter-spacing: 2px;
+    letter-spacing: 5px;
 
     background-color: white;
 
@@ -227,7 +227,7 @@ main .container-main .creation .title>#btnSee
 
     cursor: pointer;
 
-    transition: background-color 200ms, color 200ms;
+    transition: background-color 200ms, color 200ms, letter-spacing 200ms;
 }
 
 main .container-main .creation>.pictures-container
@@ -431,7 +431,7 @@ footer .attribution{
     width: 400px;
 
     margin: 0 auto;
-    
+
     padding-bottom: 20px;
 
     text-align: center;
