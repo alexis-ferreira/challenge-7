@@ -403,7 +403,7 @@ footer .container-footer .bottom-footer>.copyright>p
         background-position: 0 0;
         font-family: 'Alata', sans-serif;
         max-width: 450px;
-        height: 650px;
+        height: 775px;
         z-index: 3;
     }
 
@@ -428,7 +428,7 @@ footer .container-footer .bottom-footer>.copyright>p
 
     header .info .container-p {
         border: 2px solid white;
-        margin: 150px 30px;
+        margin: 180px 30px;
     }
 
     header .header-container .menu > ul {
